@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:wght@500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: rgba(218,87,87,0.781);
+  font-family: 'Abyssinica SIL', serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.app h1{
+  font-size: 2.3rem;
+  color: rgba(2,43,97);
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.food_item_container{
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.food_item_container h3{
+  max-width: 300px;
+  text-align: center;
+  color: black;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.food_item_container .card{
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  width: 270px;
+  height: 280px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  background-color: #ffffff;
+}
+.food_item_container .card:hover{
+  background-color: rgba(197,241,241,0.096);
+  box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  color: #333333;
+}
+img{
+  object-fit: cover;
+  width: 250px;
+  height: 200px;
+}
+.inputSearch{
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.inputSearch:hover{
+  box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+  cursor: pointer;
+}
+button{
+  padding: 5px 15px;
+  background-color: rgb(30,164,241);
+  border: 1.5px solid rgb(30,164,241);
+  margin-left: 5px;
+  border-radius: 4px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
 }
