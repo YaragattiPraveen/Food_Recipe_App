@@ -42,7 +42,9 @@ function App() {
         {
           foodlist.map((val, index) => {
             return (
-              <div className='card' key={index}>
+              <div className='card' key={index} onClick={(e)=>{
+                window.open(val.recipe.url)
+              }}>
                 <img src={val.recipe.image} alt='random img' />
                 <h3>{val.recipe.label}</h3>
               </div>
