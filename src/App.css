@@ -55,6 +55,7 @@ img{
   object-fit: cover;
   width: 250px;
   height: 200px;
+  border-radius: 5px;
 }
 .inputSearch{
   padding: 6px 16px;
