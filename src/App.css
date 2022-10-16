@@ -1,84 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:wght@500&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: rgba(218,87,87,0.781);
+
+body {
   font-family: 'Abyssinica SIL', serif;
+  /* Created with https://www.css-gradient.com */
+  background: rgba(136, 130, 130, 0.233);
 }
-.app{
+
+.app {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 90%;
+  margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: rgba(131, 127, 127, 0.082);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.app h1{
+
+.app h1 {
   font-size: 2.3rem;
-  color: rgba(2,43,97);
+  color: rgba(2, 43, 97);
   font-family: 'Poppins', sans-serif;
   margin: 10px 0;
 }
-.food_item_container{
+
+.food_item_container {
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  padding: 20px 10px 20px 10px;
 }
-.food_item_container h3{
+
+.food_item_container h3 {
   max-width: 300px;
   text-align: center;
   color: black;
   margin-bottom: 8px;
+  padding: 10px 0;
   font-size: 1rem;
 }
-.food_item_container .card{
-  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+
+.food_item_container .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 270px;
-  height: 280px;
+  height: auto;
   padding: 10px;
   cursor: pointer;
   transition: all .5s ease-in-out;
   background-color: #ffffff;
 }
-.food_item_container .card:hover{
-  background-color: rgba(197,241,241,0.096);
-  box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+
+.food_item_container .card:hover {
+  background-color: rgba(197, 241, 241, 0.096);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   cursor: pointer;
   color: #333333;
+  scale: 1.1;
 }
-img{
+
+img {
   object-fit: cover;
   width: 250px;
   height: 200px;
   border-radius: 5px;
 }
-.inputSearch{
+
+form{
+  /* border: 1px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.inputSearch {
   padding: 6px 16px;
   outline: none;
   border: none;
+  font-size: .9rem;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
-.inputSearch:hover{
-  box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
-  cursor: pointer;
-}
-button{
+
+button {
   padding: 5px 15px;
-  background-color: rgb(30,164,241);
-  border: 1.5px solid rgb(30,164,241);
-  margin-left: 5px;
-  border-radius: 4px;
+  background-color: rgb(30, 164, 241);
+  border: 1.5px solid rgb(30, 164, 241);
+  font-size: .9rem;
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
+
 button:hover{
-  background-color: #ffffff;
+  background-color: rgb(7, 133, 206);
+  color: #ffffff;
+}
+.readmore{
+  padding: 20px 0;
+}
+.readmore p{
+  font-size: 1.1rem;
   cursor: pointer;
-  box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+}
+.readmore p:hover{
+  text-decoration: underline;
+  color: blue;
 }
